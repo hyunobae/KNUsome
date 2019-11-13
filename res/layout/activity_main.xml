@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mainActivityFrame"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/peoplebutton"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/people"
+            android:drawableTint="@color/white"
+            android:paddingTop="3dp"
+            android:text="people"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="675dp" />
+
+        <Button
+            android:id="@+id/chatbutton"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/chat"
+            android:drawableTint="@color/white"
+            android:paddingTop="3dp"
+            android:text="chat"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="675dp" />
+
+        <Button
+            android:id="@+id/accountbutton"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/account"
+            android:drawableTint="@color/white"
+            android:paddingTop="3dp"
+            android:text="account"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="281dp"
+            tools:layout_editor_absoluteY="675dp" />
+    </LinearLayout>
+
+
+
+
+    <!--  <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/bottom_navigation_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          app:itemBackground="@color/colorPrimary"
+          app:itemIconTint="@android:color/white"
+          app:itemTextColor="@android:color/white"
+          app:menu="@menu/bottom_navigation_main"
+          tools:layout_editor_absoluteY="675dp" />-->
+
+</LinearLayout>
